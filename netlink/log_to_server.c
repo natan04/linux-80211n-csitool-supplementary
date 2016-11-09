@@ -11,12 +11,20 @@
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include <linux/netlink.h>
-
+#include <netinet/in.h>
+#include <netdb.h>
 #define MAX_PAYLOAD 2048
 #define SLOW_MSG_CNT 1
 
-int sock_fd = -1;							// the socket
+int sock_fd = -1;
+
+int sock_fd_target = -1;
+int port_target = -1;
+struct hostent *server_target;
+struct sockaddr_in target_address;
+							// the socket
 FILE* out = NULL;
+FILE* server_out = NULL;
 
 void check_usage(int argc, char** argv);
 
@@ -37,11 +45,44 @@ int main(int argc, char** argv)
 	unsigned short l, l2;
 	int count = 0;
 
+
 	/* Make sure usage is correct */
 	check_usage(argc, argv);
 
 	/* Open and check log file */
 	out = open_file(argv[1], "w");
+
+	if (argc > 2) 
+	{
+		
+		port_target = atoi(argv[3]);
+                printf("Opening TCP socket to: %s:%d\n", argv[2], port_target);
+		
+		sock_fd_target = socket(AF_INET, SOCK_STREAM, 0);
+
+		if (sock_fd_target < 0)
+		{
+			printf("ERROR opening socket\n");
+			exit(4);			
+		}
+		
+		server_target = gethostbyname(argv[2]);
+		
+		printf("what : %d\n", server_target->h_length );
+		bzero((char*) &target_address, sizeof(target_address));
+		target_address.sin_family = AF_INET;
+		bcopy((char*) server_target->h_addr, (char*)&target_address.sin_addr.s_addr, server_target->h_length);
+		target_address.sin_port = htons(port_target);
+                printf("what : %d\n", __LINE__);
+
+		if (connect(sock_fd_target, (struct sockaddr *) &target_address, sizeof(target_address)) < 0)
+		{	
+			printf("Error connecting\n");
+			exit(5);
+		}	
+
+	}
+	printf("finishing init step\n");
 
 	/* Setup the socket */
 	sock_fd = socket(PF_NETLINK, SOCK_DGRAM, NETLINK_CONNECTOR);
@@ -88,6 +129,9 @@ int main(int argc, char** argv)
 		l = (unsigned short) cmsg->len;
 		l2 = htons(l);
 		fwrite(&l2, 1, sizeof(unsigned short), out);
+
+		write(sock_fd_target, &l2, sizeof(short));
+		write(sock_fd_target, cmsg->data, l);
 		ret = fwrite(cmsg->data, 1, l, out);
 		if (count % 100 == 0)
 			printf("wrote %d bytes [msgcnt=%u]\n", ret, count);
@@ -102,9 +146,9 @@ int main(int argc, char** argv)
 
 void check_usage(int argc, char** argv)
 {
-	if (argc != 2)
+	if (argc != 2 && argc != 4)
 	{
-		fprintf(stderr, "Usage: %s <output_file>\n", argv[0]);
+		fprintf(stderr, "Usage: %s <output_file> [IP]:[port]\n", argv[0]);
 		exit_program(1);
 	}
 }

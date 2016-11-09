@@ -1,4 +1,4 @@
-all: print_packets get_first_bfee parse_log log_to_file nl_bf_to_eff
+all: print_packets get_first_bfee parse_log log_to_server log_to_file nl_bf_to_eff
 
 KERNEL = $(strip $(shell uname -r))
 KERNEL_SOURCE = /lib/modules/$(KERNEL)/build
@@ -11,11 +11,13 @@ else
         $(error Kernel headers not found)
 endif
 
-CFLAGS = -Wall -Werror
+CFLAGS = -g -Wall -Werror
 LDLIBS = -lm
 CC = gcc
 
 nl_bf_to_eff: nl_bf_to_eff.c bf_to_eff.o iwl_nl.o util.o q_approx.o
+
+log_to_server.c: iwl_connector.h
 
 log_to_file.c: iwl_connector.h
 
