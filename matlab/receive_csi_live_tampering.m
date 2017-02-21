@@ -11,36 +11,11 @@ function [tamper_history, enviornment_move, CSI_history, CSI_samples]  = receive
     for i=1:length(ports)
         flushinput(sockets{i});
     end
-    
-%    for index_pre_history=1:tamper_history_size
-%     for index_rec=1:length(ports)
-%       tamper_history{index_rec,index_pre_history} = handle_data(sockets{index_rec});
-%     end
-%     index_pre_history 
-%    end
-   
+
   enviornment_move = []; 
-%   
-%    for enviornment_move_index=1:enviornment_move_size
-%     for index_rec=1:length(ports)
-%       enviornment_move{index_rec,enviornment_move_index} = handle_data(sockets{index_rec});
-%     end
-%     enviornment_move_index 
-%    end
-%   
- 
   tamper_history =[];
   
-  
-%   for index_history=1:10
-%     for index_rec=1:length(ports)
-%           display('10 samples to run away');
-%         CSI_history{index_rec,index_history} = handle_data(sockets{index_rec});
-%      
-%     end
-%      end
-%   % edit image 1
-%   
+  %Capturing history_size packets and putting inside CSI_history
   for index_history=1:history_size
     for index_rec=1:length(ports)
       CSI_history{index_rec,index_history} = handle_data(sockets{index_rec});
@@ -53,9 +28,8 @@ function [tamper_history, enviornment_move, CSI_history, CSI_samples]  = receive
   for index_samples=1:samples_size
     for index_rec=1:length(ports)
       CSI_tamper_try{index_rec,index_samples} = handle_data(sockets{index_rec});
-        index_samples
-    end
-  
+      index_samples
+    end  
   end
   
   
@@ -71,7 +45,7 @@ function [tamper_history, enviornment_move, CSI_history, CSI_samples]  = receive
         flushinput(sockets{i});
     end
     
-   for index_samples=1:50
+   for index_samples=1:150
     for index_rec=1:length(ports)
       index_samples  
       CSI_i = handle_data(sockets{index_rec});
@@ -80,7 +54,7 @@ function [tamper_history, enviornment_move, CSI_history, CSI_samples]  = receive
        
     end
      for index_rec=1:length(ports)
-         display(sprintf( '(threshold, ditance, sign -): (%d, %d, %d)',  thresholds_max(index_rec), distance_i{index_rec}));
+         display(sprintf( '(threshold, ditance, dec ,sign -): (%d, %d, %d, %d)',  thresholds_max(index_rec), distance_i{index_rec},thresholds_max(index_rec) - distance_i{index_rec}, sign(thresholds_max(index_rec) - distance_i{index_rec}) ));
      end
    
   end

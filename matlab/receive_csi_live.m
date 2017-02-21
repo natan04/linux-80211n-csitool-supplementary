@@ -1,4 +1,4 @@
-function [tamper_history, enviornment_move, CSI_history, CSI_samples]  = receive_csi_live(ports, tamper_history_size, enviornment_move_size, history_size, samples_size)
+function [ CSI_history, CSI_samples]  = receive_csi_live(ports, history_size, samples_size)
     
     display('waiting for connection');
     for i=1:length(ports)
@@ -11,36 +11,11 @@ function [tamper_history, enviornment_move, CSI_history, CSI_samples]  = receive
     for i=1:length(ports)
         flushinput(sockets{i});
     end
-    
-%    for index_pre_history=1:tamper_history_size
-%     for index_rec=1:length(ports)
-%       tamper_history{index_rec,index_pre_history} = handle_data(sockets{index_rec});
-%     end
-%     index_pre_history 
-%    end
-   
-  enviornment_move = []; 
-%   
-%    for enviornment_move_index=1:enviornment_move_size
-%     for index_rec=1:length(ports)
-%       enviornment_move{index_rec,enviornment_move_index} = handle_data(sockets{index_rec});
-%     end
-%     enviornment_move_index 
-%    end
-%   
- 
+
+   enviornment_move = []; 
   tamper_history =[];
   
-  
-%   for index_history=1:10
-%     for index_rec=1:length(ports)
-%           display('10 samples to run away');
-%         CSI_history{index_rec,index_history} = handle_data(sockets{index_rec});
-%      
-%     end
-%      end
-%   % edit image 1
-%   
+  %Capturing history_size packets and putting inside CSI_history
   for index_history=1:history_size
     for index_rec=1:length(ports)
       CSI_history{index_rec,index_history} = handle_data(sockets{index_rec});
@@ -52,7 +27,7 @@ function [tamper_history, enviornment_move, CSI_history, CSI_samples]  = receive
   
   for index_samples=1:samples_size
     for index_rec=1:length(ports)
-      CSI_tamper_try{index_rec,index_samples} = handle_data(sockets{index_rec});
+      CSI_samples{index_rec,index_samples} = handle_data(sockets{index_rec});
         index_samples
     end
   
@@ -60,30 +35,6 @@ function [tamper_history, enviornment_move, CSI_history, CSI_samples]  = receive
   
   
   
-    parfor index=1:length(ports)
-        thresholds_max(index) = max_threshold(CSI_history(index,:)); 
-    end
-  
-    
-    display('finish to calculate threshold')
-        %all of them start together
-    for i=1:length(ports)
-        flushinput(sockets{i});
-    end
-    
-   for index_samples=1:100
-    for index_rec=1:length(ports)
-      index_samples  
-      CSI_i = handle_data(sockets{index_rec});
-      CSI_samples{index_rec,index_samples} = CSI_i ;
-      distance_i{index_rec} = graph_distance_from_history(CSI_history(i,:),{CSI_i});
-       
-    end
-     for index_rec=1:length(ports)
-         display(sprintf( '(threshold, ditance, dec ,sign -): (%d, %d, %d, %d)',  thresholds_max(index_rec), distance_i{index_rec},thresholds_max(index_rec) - distance_i{index_rec}, sign(thresholds_max(index_rec) - distance_i{index_rec}) ));
-     end
-   
-  end
   
 end
 
