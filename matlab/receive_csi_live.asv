@@ -1,0 +1,142 @@
+function [tamper_history, enviornment_move, CSI_history, CSI_samples]  = receive_csi_live(ports, tamper_history_size, enviornment_move_size, history_size, samples_size)
+    
+    display('waiting for connection');
+    for i=1:length(ports)
+        sockets{i} = tcpip('0.0.0.0', ports(i), 'NetworkRole', 'server');
+        fopen(sockets{i});
+        display(sprintf('get connection from ip %s', sockets{i}.RemoteHost))
+    end
+    
+    %all of them start together
+    for i=1:length(ports)
+        flushinput(sockets{i});
+    end
+    
+%    for index_pre_history=1:tamper_history_size
+%     for index_rec=1:length(ports)
+%       tamper_history{index_rec,index_pre_history} = handle_data(sockets{index_rec});
+%     end
+%     index_pre_history 
+%    end
+   
+  enviornment_move = []; 
+%   
+%    for enviornment_move_index=1:enviornment_move_size
+%     for index_rec=1:length(ports)
+%       enviornment_move{index_rec,enviornment_move_index} = handle_data(sockets{index_rec});
+%     end
+%     enviornment_move_index 
+%    end
+%   
+ 
+  tamper_history =[];
+  
+  
+%   for index_history=1:10
+%     for index_rec=1:length(ports)
+%           display('10 samples to run away');
+%         CSI_history{index_rec,index_history} = handle_data(sockets{index_rec});
+%      
+%     end
+%      end
+%   % edit image 1
+%   
+  for index_history=1:history_size
+    for index_rec=1:length(ports)
+      CSI_history{index_rec,index_history} = handle_data(sockets{index_rec});
+     
+    end
+  index_history  
+  end
+  
+  
+  for index_samples=1:samples_size
+    for index_rec=1:length(ports)
+      CSI_tamper_try{index_rec,index_samples} = handle_data(sockets{index_rec});
+        index_samples
+    end
+  
+  end
+  
+  
+  
+    parfor index=1:length(ports)
+        thresholds_max(index) = max_threshold(CSI_history(index,:)); 
+    end
+  
+    
+    display('finish to calculate threshold')
+        %all of them start together
+    for i=1:length(ports)
+        flushinput(sockets{i});
+    end
+    
+   for index_samples=1:50
+    for index_rec=1:length(ports)
+      index_samples  
+      CSI_i = handle_data(sockets{index_rec});
+      CSI_samples{index_rec,index_samples} = CSI_i ;
+      distance_i{index_rec} = graph_distance_from_history(CSI_history(i,:),{CSI_i});
+       
+    end
+     for index_rec=1:length(ports)
+         display(sprintf( '(threshold, ditance, sign -): (%d, %d, %d)',  thresholds_max(index_rec), distance_i{index_rec}));
+     end
+   
+  end
+  
+end
+
+
+
+
+function ret = handle_data(f)
+
+broken_perm = 0;                % Flag marking whether we've encountered a broken CSI yet
+triangle = [1 3 6];             % What perm should sum to for 1,2,3 antennas
+
+waiting_for_new_packet = 1;
+% Read size and code
+   while (waiting_for_new_packet)
+    field_len = fread(f, 1, 'uint16');
+    if (isempty(field_len) == 1)
+        continue;
+    end
+    %  field_len = fread(f, 1, 'uint16', 0, 'ieee-be');
+    code = fread(f,1);
+    
+    % If unhandled code, skip (seek over) the record and continue
+    if (code == 187) % get beamforming or phy data
+      %  bytes = fread(f, field_len-1, 'uint8=>uint8');
+        bytes = fread(f, field_len-1, 'uint8');
+        bytes = uint8(bytes);
+        if (length(bytes) ~= field_len-1)
+            fclose(f);
+            return;
+        end
+    else % skip all other info
+        fseek(f, field_len - 1, 'cof');
+    end
+    
+    if (code == 187) %hex2dec('bb')) Beamforming matrix -- output a record
+        ret = read_bfee(bytes);
+        
+        perm = ret.perm;
+        Nrx = ret.Nrx;
+        if Nrx == 1 % No permuting needed for only 1 antenna
+            return;
+        end
+        if sum(perm) ~= triangle(Nrx) % matrix does not contain default values
+            if broken_perm == 0
+                broken_perm = 1;
+                filename = 'bla'
+                fprintf('WARN ONCE: Found CSI (%s) with Nrx=%d and invalid perm=[%s]\n', filename, Nrx, int2str(perm));
+            end
+        else
+            ret.csi(:,perm(1:Nrx),:) = ret.csi(:,1:Nrx,:);
+        end
+    end
+    waiting_for_new_packet = 0;
+   end
+   
+end
