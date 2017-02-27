@@ -1,4 +1,4 @@
-function [tamper_history, enviornment_move, CSI_history, CSI_samples]  = receive_csi_live(ports, tamper_history_size, enviornment_move_size, history_size, samples_size)
+function [ CSI_history, CSI_samples]  = receive_csi_live_tampering(ports, history_size, samples_size)
     
     display('waiting for connection');
     for i=1:length(ports)

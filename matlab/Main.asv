@@ -3,44 +3,44 @@ function [ output_args ] = Main(config, create_graphs)
 %   Detailed explanation goes here
 cur = datestr(now,'HH-MM');
 if (ischar(config) == 1)
-init = IniConfig();
-init.ReadFile(config)
+    
+    %getting information from file
+    init = IniConfig();
+    init.ReadFile(config)
 
-receivers_use = str2num(init.GetValues('Receivers', 'receivers_use'));
-number_of_receivers = size(receivers_use,2);
-history_length = init.GetValues('Algorithm', 'history_length');
+    receivers_use = str2num(init.GetValues('Receivers', 'receivers_use'));
+    number_of_receivers = size(receivers_use,2);
+    history_length = init.GetValues('Algorithm', 'history_length');
 
-sum_samples = init.GetValues('Algorithm', 'sum_samples');
-tamper_history_size = init.GetValues('Algorithm', 'tamper_history_size');
-enviornment_move_size = init.GetValues('Algorithm', 'enviornment_move_size');
+    sum_samples = init.GetValues('Algorithm', 'sum_samples');
 
+    disp( sprintf('Loaded configuration:\n\tNumber of receivers: \t\t%d\n\n\tNum of history samples: \t%d\n\tSum samples:\t\t\t\t%d', number_of_receivers, history_length, sum_samples) )
 
+    recI = init.GetValues('receiver 1', 'type');
+    if (strcmp(recI, 'file'))
+        %jump to handle files
+    end
 
-disp( sprintf('Loaded configuration:\n\tNumber of receivers: \t\t%d\n\n\tNum of history samples: \t%d\n\tSum samples:\t\t\t\t%d', number_of_receivers, history_length, sum_samples) )
+    %Live section
+    ports =[];
 
-recI = init.GetValues('receiver 1', 'type');
-if (strcmp(recI, 'file'))
-    %jump to handle files
+    %getting ports information for each receiver.
+    for i=receivers_use
+        recI_port = init.GetValues(['receiver ' num2str(i)], 'port');
+        ports = [ports recI_port]; 
+    end
+    
+    %[history, samples_s] = receive_csi_live(ports, history_length, sum_samples);
+    [history, samples_s] = receive_csi_live_tampering(ports, history_length, sum_samples);
+
+    %sync streams to fix missed packets
+    history = sync_stream(history);
+    samples_s = sync_stream(samples_s);
+
 end
 
-%Live section
-ports =[];
-max_receivers = init.GetValues('Receivers', 'max_receivers');
-
-for i=receivers_use
-    recI_port = init.GetValues(['receiver ' num2str(i)], 'port');
-    ports = [ports recI_port]; 
-end
-[history, samples_s] = receive_csi_live(ports, tamper_history_size,enviornment_move_size, history_length, sum_samples);
-
-history = sync_stream(history);
-samples_s = sync_stream(samples_s);
-
-end
-
-%%%%%%%%%%%%%%%%%%%%threshold calculation%%%%%% 
+%threshold calculation
 if (exist('thresholds_max') == 0)
-
     number_of_receivers = size(history,1);
     parfor i=1:number_of_receivers
         thresholds_max(i) = max_threshold(history(i,:)); 
@@ -56,9 +56,7 @@ if (exist('distance_semaples_from_history') == 0)
         distance_semaples_from_history{i} = graph_distance_from_history(history(i,:),samples_s(i,:)); 
     end
 
-%     parfor i=1:number_of_receivers
-%         distance_set_enviornment{i} = graph_distance_from_history(history(i,:),environemnt_history(i,:)); 
-%     end
+
 end
 
 %preffering already saved location
@@ -68,8 +66,7 @@ if (exist('path_cur') == 0)
 
     name_file = sprintf('%s/%s.mat',path_cur, cur);
     mkdir(path_cur);
-    %save(name_file,'tamper_history', 'distance_set_enviornment', 'environemnt_history', 'samples_s','history', 'thresholds_max', 'thresholds_mean', 'distance_set','path_cur','number_of_receivers');
-    save(name_file,'tamper_history', 'environemnt_history', 'samples_s','history', 'thresholds_max', 'thresholds_mean', 'distance_semaples_from_history','path_cur','number_of_receivers');
+    save(name_file, 'samples_s','history', 'thresholds_max', 'thresholds_mean', 'distance_semaples_from_history','path_cur','number_of_receivers');
 
 end
 
