@@ -1,0 +1,6112 @@
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 65104
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7090484158L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 37
+                                   len       = 53
+                                   info      = 'li'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 0L
+     type      = Data
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 46016
+     addr4     = None
+###[ LLC ]###
+        dsap      = 0xaa
+        ssap      = 0xaa
+        ctrl      = 3
+###[ SNAP ]###
+           OUI       = 0x0
+           code      = 0x800
+###[ IP ]###
+              version   = 4L
+              ihl       = 5L
+              tos       = 0x0
+              len       = 328
+              id        = 0
+              flags     = 
+              frag      = 0L
+              ttl       = 64
+              proto     = udp
+              chksum    = 0x79a6
+              src       = 0.0.0.0
+              dst       = 255.255.255.255
+              \options   \
+###[ UDP ]###
+                 sport     = bootpc
+                 dport     = bootps
+                 len       = 308
+                 chksum    = 0x9f44
+###[ BOOTP ]###
+                    op        = BOOTREQUEST
+                    htype     = 1
+                    hlen      = 6
+                    hops      = 0
+                    xid       = 1061115485
+                    secs      = 3328
+                    flags     = 
+                    ciaddr    = 0.0.0.0
+                    yiaddr    = 0.0.0.0
+                    siaddr    = 0.0.0.0
+                    giaddr    = 0.0.0.0
+                    chaddr    = '\x14\xcc \xa9\x02\x86\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+                    sname     = '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+                    file      = '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+                    options   = 'c\x82Sc'
+###[ DHCP options ]###
+                       options   = [message-type=discover max_dhcp_size=576 param_req_list='\x01\x03\x06\x0c\x0f\x1c*' vendor_class_id='udhcp 1.23.2' end pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad]
+###[ Padding ]###
+                          load      = '*/ot'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 65136
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7090688400L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 132
+                                   len       = 194
+                                   info      = 'V\xdb'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 65184
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7090893241L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 171
+                                   len       = 66
+                                   info      = '\xf1\xbe'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 65200
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7090995696L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 26
+                                   len       = 1
+                                   info      = '\xc9'
+###[ 802.11 Information Element ]###
+                                      ID        = 99
+                                      len       = None
+                                      info      = ''
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 65296
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7091610282L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 91
+                                   len       = 19
+                                   info      = '\\a'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 65312
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7091712957L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 231
+                                   len       = 176
+                                   info      = '9L'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 65376
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7092122331L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 215
+                                   len       = 153
+                                   info      = '&\xe9'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 65392
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7092224883L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 27
+                                   len       = 122
+                                   info      = '\xae\x81'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 65408
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7092327414L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 155
+                                   len       = 53
+                                   info      = '\xf72'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbd\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 65424
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7092429420L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 123
+                                   len       = 131
+                                   info      = '-$'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbd\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 65456
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7092634111L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 247
+                                   len       = 206
+                                   info      = '\xc0y'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 65472
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7092736557L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 43
+                                   len       = 242
+                                   info      = 'E\x80'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 16
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7093248399L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 164
+                                   len       = 7
+                                   info      = '\x11\x90'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 32
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7093351080L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 97
+                                   len       = 89
+                                   info      = '\x1f>'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xa9\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 48
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7093453701L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 106
+                                   len       = 234
+                                   info      = '4\xb5'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 64
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7093555950L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 231
+                                   len       = 171
+                                   info      = '\xc5\xff'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 0L
+     type      = Data
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 46032
+     addr4     = None
+###[ LLC ]###
+        dsap      = 0xaa
+        ssap      = 0xaa
+        ctrl      = 3
+###[ SNAP ]###
+           OUI       = 0x0
+           code      = 0x800
+###[ IP ]###
+              version   = 4L
+              ihl       = 5L
+              tos       = 0x0
+              len       = 328
+              id        = 0
+              flags     = 
+              frag      = 0L
+              ttl       = 64
+              proto     = udp
+              chksum    = 0x79a6
+              src       = 0.0.0.0
+              dst       = 255.255.255.255
+              \options   \
+###[ UDP ]###
+                 sport     = bootpc
+                 dport     = bootps
+                 len       = 308
+                 chksum    = 0x9f41
+###[ BOOTP ]###
+                    op        = BOOTREQUEST
+                    htype     = 1
+                    hlen      = 6
+                    hops      = 0
+                    xid       = 1061115485
+                    secs      = 3331
+                    flags     = 
+                    ciaddr    = 0.0.0.0
+                    yiaddr    = 0.0.0.0
+                    siaddr    = 0.0.0.0
+                    giaddr    = 0.0.0.0
+                    chaddr    = '\x14\xcc \xa9\x02\x86\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+                    sname     = '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+                    file      = '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+                    options   = 'c\x82Sc'
+###[ DHCP options ]###
+                       options   = [message-type=discover max_dhcp_size=576 param_req_list='\x01\x03\x06\x0c\x0f\x1c*' vendor_class_id='udhcp 1.23.2' end pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad]
+###[ Padding ]###
+                          load      = 't\xe8\x84\\'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 176
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7094180569L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 165
+                                   len       = 118
+                                   info      = '\x0b\x89'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 208
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7094374810L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 122
+                                   len       = 224
+                                   info      = '\x93q'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 224
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7094477256L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 140
+                                   len       = 100
+                                   info      = '\xc4d'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 240
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7094579677L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 179
+                                   len       = 88
+                                   info      = '\xd2:'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 272
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7094784724L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 230
+                                   len       = 100
+                                   info      = '\xa3>'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 304
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7094990620L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 168
+                                   len       = 174
+                                   info      = '\xebi'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 320
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7095091706L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 190
+                                   len       = 84
+                                   info      = '\xe8\xd0'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 336
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7095194497L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 149
+                                   len       = 171
+                                   info      = '\xc4\xbb'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 21
+  present   = Flags+Channel+dBm_AntSignal+Antenna+b14+b19
+  notdecoded= '\x10\x00\x94\t\x80\x04\xbb\x07\x00\x00\x0f\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Data
+     proto     = 0L
+     FCfield   = 
+     ID        = 15360
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 0
+     addr4     = None
+###[ 802.11 QoS ]###
+        TID       = 0L
+        EOSP      = 0L
+        Ack Policy= 0L
+        Reserved  = 0L
+        TXOP      = 0
+###[ LLC ]###
+           dsap      = 0xaa
+           ssap      = 0xaa
+           ctrl      = 3
+###[ SNAP ]###
+              OUI       = 0x0
+              code      = 0x800
+###[ IP ]###
+                 version   = 4L
+                 ihl       = 5L
+                 tos       = 0x0
+                 len       = 84
+                 id        = 12024
+                 flags     = DF
+                 frag      = 0L
+                 ttl       = 64
+                 proto     = icmp
+                 chksum    = 0x262d
+                 src       = 192.168.50.50
+                 dst       = 192.168.50.1
+                 \options   \
+###[ ICMP ]###
+                    type      = echo-request
+                    code      = 0
+                    chksum    = 0xe8b0
+                    id        = 0x16af
+                    seq       = 0x0
+###[ Raw ]###
+                       load      = '?b\xb9=\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ Padding ]###
+                          load      = '\xffP\xaf\x1b'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 400
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x01\x02\x10\x88\x13\x10\x000\xa4\xb0\xfc'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 400
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x01\x02\x10\x88\x13\x10\x00d\x90\xa4\x1f'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 21
+  present   = Flags+Channel+dBm_AntSignal+Antenna+b14+b19
+  notdecoded= '\x10\x00\x94\t\x80\x04\xbb\x07\x00\x00\x0f\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Data
+     proto     = 0L
+     FCfield   = retry
+     ID        = 15360
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 0
+     addr4     = None
+###[ 802.11 QoS ]###
+        TID       = 0L
+        EOSP      = 0L
+        Ack Policy= 0L
+        Reserved  = 0L
+        TXOP      = 0
+###[ LLC ]###
+           dsap      = 0xaa
+           ssap      = 0xaa
+           ctrl      = 3
+###[ SNAP ]###
+              OUI       = 0x0
+              code      = 0x800
+###[ IP ]###
+                 version   = 4L
+                 ihl       = 5L
+                 tos       = 0x0
+                 len       = 84
+                 id        = 12024
+                 flags     = DF
+                 frag      = 0L
+                 ttl       = 64
+                 proto     = icmp
+                 chksum    = 0x262d
+                 src       = 192.168.50.50
+                 dst       = 192.168.50.1
+                 \options   \
+###[ ICMP ]###
+                    type      = echo-request
+                    code      = 0
+                    chksum    = 0xe8b0
+                    id        = 0x16af
+                    seq       = 0x0
+###[ Raw ]###
+                       load      = '?b\xb9=\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ Padding ]###
+                          load      = 'X\xd2\x7fm'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 400
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x01\x02\x10\x88\x13\x10\x00d\x90\xa4\x1f'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 400
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x01\x02\x10\x88\x13\x10\x00d\x90\xa4\x1f'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 400
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x01\x02\x10\x88\x13\x10\x00d\x90\xa4\x1f'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 400
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x01\x02\x10\x88\x13\x10\x00d\x90\xa4\x1f'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 400
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x01\x02\x10\x88\x13\x10\x00d\x90\xa4\x1f'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 400
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x01\x02\x10\x88\x13\x10\x00d\x90\xa4\x1f'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbd\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 400
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x01\x02\x10\x88\x13\x10\x00d\x90\xa4\x1f'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 400
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x01\x02\x10\x88\x13\x10\x00d\x90\xa4\x1f'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 448
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7095808551L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 172
+                                   len       = 202
+                                   info      = '\xd0\xb7'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 576
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\x1ag^Z'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 576
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb8\xa2\x82\xf4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 576
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb8\xa2\x82\xf4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 576
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb8\xa2\x82\xf4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 576
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb8\xa2\x82\xf4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 576
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb8\xa2\x82\xf4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 576
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb8\xa2\x82\xf4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 576
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb8\xa2\x82\xf4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 576
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb8\xa2\x82\xf4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 576
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb8\xa2\x82\xf4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 21
+  present   = Flags+Channel+dBm_AntSignal+Antenna+b14+b19
+  notdecoded= '\x10\x00\x94\t\x80\x04\xbb\x07\x00\x00\x0f\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Data
+     proto     = 0L
+     FCfield   = 
+     ID        = 15360
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 16
+     addr4     = None
+###[ 802.11 QoS ]###
+        TID       = 0L
+        EOSP      = 0L
+        Ack Policy= 0L
+        Reserved  = 0L
+        TXOP      = 0
+###[ LLC ]###
+           dsap      = 0xaa
+           ssap      = 0xaa
+           ctrl      = 3
+###[ SNAP ]###
+              OUI       = 0x0
+              code      = 0x800
+###[ IP ]###
+                 version   = 4L
+                 ihl       = 5L
+                 tos       = 0x0
+                 len       = 84
+                 id        = 12105
+                 flags     = DF
+                 frag      = 0L
+                 ttl       = 64
+                 proto     = icmp
+                 chksum    = 0x25dc
+                 src       = 192.168.50.50
+                 dst       = 192.168.50.1
+                 \options   \
+###[ ICMP ]###
+                    type      = echo-request
+                    code      = 0
+                    chksum    = 0xa4e9
+                    id        = 0x16af
+                    seq       = 0x1
+###[ Raw ]###
+                       load      = '?q\xfc\xf4\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ Padding ]###
+                          load      = '\xf1\xc7\xd1x'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 592
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x02\x02\x10\x88\x13 \x00-\x1f\x80X'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 21
+  present   = Flags+Channel+dBm_AntSignal+Antenna+b14+b19
+  notdecoded= '\x10\x00\x94\t\x80\x04\xbb\x07\x00\x00\x0f\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Data
+     proto     = 0L
+     FCfield   = retry
+     ID        = 15360
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 16
+     addr4     = None
+###[ 802.11 QoS ]###
+        TID       = 0L
+        EOSP      = 0L
+        Ack Policy= 0L
+        Reserved  = 0L
+        TXOP      = 0
+###[ LLC ]###
+           dsap      = 0xaa
+           ssap      = 0xaa
+           ctrl      = 3
+###[ SNAP ]###
+              OUI       = 0x0
+              code      = 0x800
+###[ IP ]###
+                 version   = 4L
+                 ihl       = 5L
+                 tos       = 0x0
+                 len       = 84
+                 id        = 12105
+                 flags     = DF
+                 frag      = 0L
+                 ttl       = 64
+                 proto     = icmp
+                 chksum    = 0x25dc
+                 src       = 192.168.50.50
+                 dst       = 192.168.50.1
+                 \options   \
+###[ ICMP ]###
+                    type      = echo-request
+                    code      = 0
+                    chksum    = 0xa4e9
+                    id        = 0x16af
+                    seq       = 0x1
+###[ Raw ]###
+                       load      = '?q\xfc\xf4\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ Padding ]###
+                          load      = 'VE\x01\x0e'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 592
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x02\x02\x10\x88\x13 \x00y+\x94\xbb'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 592
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x02\x02\x10\x88\x13 \x00y+\x94\xbb'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 592
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x02\x02\x10\x88\x13 \x00y+\x94\xbb'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 592
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x02\x02\x10\x88\x13 \x00y+\x94\xbb'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 592
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x02\x02\x10\x88\x13 \x00y+\x94\xbb'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 592
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x02\x02\x10\x88\x13 \x00y+\x94\xbb'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 592
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x02\x02\x10\x88\x13 \x00y+\x94\xbb'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 592
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x02\x02\x10\x88\x13 \x00y+\x94\xbb'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 592
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x02\x02\x10\x88\x13 \x00y+\x94\xbb'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 0L
+     type      = Data
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 46048
+     addr4     = None
+###[ LLC ]###
+        dsap      = 0xaa
+        ssap      = 0xaa
+        ctrl      = 3
+###[ SNAP ]###
+           OUI       = 0x0
+           code      = 0x800
+###[ IP ]###
+              version   = 4L
+              ihl       = 5L
+              tos       = 0x0
+              len       = 328
+              id        = 0
+              flags     = 
+              frag      = 0L
+              ttl       = 64
+              proto     = udp
+              chksum    = 0x79a6
+              src       = 0.0.0.0
+              dst       = 255.255.255.255
+              \options   \
+###[ UDP ]###
+                 sport     = bootpc
+                 dport     = bootps
+                 len       = 308
+                 chksum    = 0x9f3e
+###[ BOOTP ]###
+                    op        = BOOTREQUEST
+                    htype     = 1
+                    hlen      = 6
+                    hops      = 0
+                    xid       = 1061115485
+                    secs      = 3334
+                    flags     = 
+                    ciaddr    = 0.0.0.0
+                    yiaddr    = 0.0.0.0
+                    siaddr    = 0.0.0.0
+                    giaddr    = 0.0.0.0
+                    chaddr    = '\x14\xcc \xa9\x02\x86\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+                    sname     = '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+                    file      = '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+                    options   = 'c\x82Sc'
+###[ DHCP options ]###
+                       options   = [message-type=discover max_dhcp_size=576 param_req_list='\x01\x03\x06\x0c\x0f\x1c*' vendor_class_id='udhcp 1.23.2' end pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad]
+###[ Padding ]###
+                          load      = '\xfa\xc1\xd0\xe0'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 688
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7097040593L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 178
+                                   len       = 26
+                                   info      = '\xe3M'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 736
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7097344839L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 235
+                                   len       = 145
+                                   info      = '\xe0\x04'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 768
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7097549486L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 175
+                                   len       = 64
+                                   info      = '|\x0c'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 784
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00h\x9f\x0f\xa9'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 784
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xcaZ\xd3\x07'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 784
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xcaZ\xd3\x07'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 784
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xcaZ\xd3\x07'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 784
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xcaZ\xd3\x07'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 784
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xcaZ\xd3\x07'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 784
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xcaZ\xd3\x07'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbd\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 784
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xcaZ\xd3\x07'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 784
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xcaZ\xd3\x07'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 784
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xcaZ\xd3\x07'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 21
+  present   = Flags+Channel+dBm_AntSignal+Antenna+b14+b19
+  notdecoded= '\x10\x00\x94\t\x80\x04\xbc\x07\x00\x00\x0f\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Data
+     proto     = 0L
+     FCfield   = 
+     ID        = 15360
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 32
+     addr4     = None
+###[ 802.11 QoS ]###
+        TID       = 0L
+        EOSP      = 0L
+        Ack Policy= 0L
+        Reserved  = 0L
+        TXOP      = 0
+###[ LLC ]###
+           dsap      = 0xaa
+           ssap      = 0xaa
+           ctrl      = 3
+###[ SNAP ]###
+              OUI       = 0x0
+              code      = 0x800
+###[ IP ]###
+                 version   = 4L
+                 ihl       = 5L
+                 tos       = 0x0
+                 len       = 84
+                 id        = 12108
+                 flags     = DF
+                 frag      = 0L
+                 ttl       = 64
+                 proto     = icmp
+                 chksum    = 0x25d9
+                 src       = 192.168.50.50
+                 dst       = 192.168.50.1
+                 \options   \
+###[ ICMP ]###
+                    type      = echo-request
+                    code      = 0
+                    chksum    = 0x61ba
+                    id        = 0x16af
+                    seq       = 0x2
+###[ Raw ]###
+                       load      = '?\x81@\x13\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ Padding ]###
+                          load      = '\xd6\xbb\x0c\xc7'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 800
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x03\x02\x10\x88\x130\x00\x05?\xd5\xa5'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 800
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x03\x02\x10\x88\x130\x00Q\x0b\xc1F'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 800
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x03\x02\x10\x88\x130\x00Q\x0b\xc1F'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 800
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x03\x02\x10\x88\x130\x00Q\x0b\xc1F'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 800
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x03\x02\x10\x88\x130\x00Q\x0b\xc1F'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 800
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x03\x02\x10\x88\x130\x00Q\x0b\xc1F'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 800
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x03\x02\x10\x88\x130\x00Q\x0b\xc1F'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 800
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x03\x02\x10\x88\x130\x00Q\x0b\xc1F'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 800
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x03\x02\x10\x88\x130\x00Q\x0b\xc1F'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 800
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x03\x02\x10\x88\x130\x00Q\x0b\xc1F'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 816
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7097653194L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 82
+                                   len       = 169
+                                   info      = '\xd4g'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 880
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7098061680L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 175
+                                   len       = 88
+                                   info      = '\xd7\xc6'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 912
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7098266308L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 33
+                                   len       = 157
+                                   info      = '\xac\xb8'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 928
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7098368432L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 238
+                                   len       = 113
+                                   info      = '\xd8\x17'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 976
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00_\xd8\xa9\xd3'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 976
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xfd\x1du}'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 976
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xfd\x1du}'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 976
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xfd\x1du}'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 976
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xfd\x1du}'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 976
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xfd\x1du}'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 976
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xfd\x1du}'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbd\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 976
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xfd\x1du}'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 976
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xfd\x1du}'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 21
+  present   = Flags+Channel+dBm_AntSignal+Antenna+b14+b19
+  notdecoded= '\x10\x00\x94\t\x80\x04\xbb\x07\x00\x00\x0f\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Data
+     proto     = 0L
+     FCfield   = 
+     ID        = 15360
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 48
+     addr4     = None
+###[ 802.11 QoS ]###
+        TID       = 0L
+        EOSP      = 0L
+        Ack Policy= 0L
+        Reserved  = 0L
+        TXOP      = 0
+###[ LLC ]###
+           dsap      = 0xaa
+           ssap      = 0xaa
+           ctrl      = 3
+###[ SNAP ]###
+              OUI       = 0x0
+              code      = 0x800
+###[ IP ]###
+                 version   = 4L
+                 ihl       = 5L
+                 tos       = 0x0
+                 len       = 84
+                 id        = 12177
+                 flags     = DF
+                 frag      = 0L
+                 ttl       = 64
+                 proto     = icmp
+                 chksum    = 0x2594
+                 src       = 192.168.50.50
+                 dst       = 192.168.50.1
+                 \options   \
+###[ ICMP ]###
+                    type      = echo-request
+                    code      = 0
+                    chksum    = 0x1e88
+                    id        = 0x16af
+                    seq       = 0x3
+###[ Raw ]###
+                       load      = '?\x90\x835\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ Padding ]###
+                          load      = '\xe1\xabF\xa1'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 992
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x04\x02\x10\x88\x13@\x00\rT\xe4\xee'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbd\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 992
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x04\x02\x10\x88\x13@\x00Y`\xf0\r'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 992
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x04\x02\x10\x88\x13@\x00Y`\xf0\r'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 992
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x04\x02\x10\x88\x13@\x00Y`\xf0\r'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 992
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x04\x02\x10\x88\x13@\x00Y`\xf0\r'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 21
+  present   = Flags+Channel+dBm_AntSignal+Antenna+b14+b19
+  notdecoded= '\x10\x00\x94\t\x80\x04\xbb\x07\x00\x00\x0f\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Data
+     proto     = 0L
+     FCfield   = retry
+     ID        = 15360
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 48
+     addr4     = None
+###[ 802.11 QoS ]###
+        TID       = 0L
+        EOSP      = 0L
+        Ack Policy= 0L
+        Reserved  = 0L
+        TXOP      = 0
+###[ LLC ]###
+           dsap      = 0xaa
+           ssap      = 0xaa
+           ctrl      = 3
+###[ SNAP ]###
+              OUI       = 0x0
+              code      = 0x800
+###[ IP ]###
+                 version   = 4L
+                 ihl       = 5L
+                 tos       = 0x0
+                 len       = 84
+                 id        = 12177
+                 flags     = DF
+                 frag      = 0L
+                 ttl       = 64
+                 proto     = icmp
+                 chksum    = 0x2594
+                 src       = 192.168.50.50
+                 dst       = 192.168.50.1
+                 \options   \
+###[ ICMP ]###
+                    type      = echo-request
+                    code      = 0
+                    chksum    = 0x1e88
+                    id        = 0x16af
+                    seq       = 0x3
+###[ Raw ]###
+                       load      = '?\x90\x835\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ Padding ]###
+                          load      = 'F)\x96\xd7'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 992
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x04\x02\x10\x88\x13@\x00Y`\xf0\r'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 992
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x04\x02\x10\x88\x13@\x00Y`\xf0\r'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 992
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x04\x02\x10\x88\x13@\x00Y`\xf0\r'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 992
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x04\x02\x10\x88\x13@\x00Y`\xf0\r'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 992
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x00\x04\x02\x10\x88\x13@\x00Y`\xf0\r'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbd\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbd\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xaf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 1120
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7099392928L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 255
+                                   len       = 252
+                                   info      = '\x86\xcf'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 1152
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\x17\x15(C'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 1152
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb5\xd0\xf4\xed'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 1152
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb5\xd0\xf4\xed'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 1152
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb5\xd0\xf4\xed'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 1152
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb5\xd0\xf4\xed'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 1152
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb5\xd0\xf4\xed'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 1152
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb5\xd0\xf4\xed'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 1152
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb5\xd0\xf4\xed'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 13L
+     type      = Management
+     proto     = 0L
+     FCfield   = retry
+     ID        = 14849
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 1152
+     addr4     = None
+###[ Raw ]###
+        load      = '\x03\x02\x00\x08%\x00\xb5\xd0\xf4\xed'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 21
+  present   = Flags+Channel+dBm_AntSignal+Antenna+b14+b19
+  notdecoded= '\x10\x00\x94\t\x80\x04\xbb\x07\x00\x00\x0f\x04\x03'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Data
+     proto     = 0L
+     FCfield   = 
+     ID        = 11264
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 64
+     addr4     = None
+###[ 802.11 QoS ]###
+        TID       = 0L
+        EOSP      = 0L
+        Ack Policy= 0L
+        Reserved  = 0L
+        TXOP      = 0
+###[ LLC ]###
+           dsap      = 0xaa
+           ssap      = 0xaa
+           ctrl      = 3
+###[ SNAP ]###
+              OUI       = 0x0
+              code      = 0x800
+###[ IP ]###
+                 version   = 4L
+                 ihl       = 5L
+                 tos       = 0x0
+                 len       = 84
+                 id        = 12223
+                 flags     = DF
+                 frag      = 0L
+                 ttl       = 64
+                 proto     = icmp
+                 chksum    = 0x2566
+                 src       = 192.168.50.50
+                 dst       = 192.168.50.1
+                 \options   \
+###[ ICMP ]###
+                    type      = echo-request
+                    code      = 0
+                    chksum    = 0xdb58
+                    id        = 0x16af
+                    seq       = 0x4
+###[ Raw ]###
+                       load      = '?\x9f\xc6T\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ Padding ]###
+                          load      = '\x97\xa6\x15\x84'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbe\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xbf\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 11L
+     type      = Control
+     proto     = 0L
+     FCfield   = 
+     ID        = 16386
+     addr1     = 00:16:ea:5f:2a:46
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = None
+     SC        = None
+     addr4     = None
+###[ Raw ]###
+        load      = '$\x06[\xc4'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc0\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 0L
+     type      = Data
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 46064
+     addr4     = None
+###[ LLC ]###
+        dsap      = 0xaa
+        ssap      = 0xaa
+        ctrl      = 3
+###[ SNAP ]###
+           OUI       = 0x0
+           code      = 0x800
+###[ IP ]###
+              version   = 4L
+              ihl       = 5L
+              tos       = 0x0
+              len       = 328
+              id        = 0
+              flags     = 
+              frag      = 0L
+              ttl       = 64
+              proto     = udp
+              chksum    = 0x79a6
+              src       = 0.0.0.0
+              dst       = 255.255.255.255
+              \options   \
+###[ UDP ]###
+                 sport     = bootpc
+                 dport     = bootps
+                 len       = 308
+                 chksum    = 0x9f3b
+###[ BOOTP ]###
+                    op        = BOOTREQUEST
+                    htype     = 1
+                    hlen      = 6
+                    hops      = 0
+                    xid       = 1061115485
+                    secs      = 3337
+                    flags     = 
+                    ciaddr    = 0.0.0.0
+                    yiaddr    = 0.0.0.0
+                    siaddr    = 0.0.0.0
+                    giaddr    = 0.0.0.0
+                    chaddr    = '\x14\xcc \xa9\x02\x86\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+                    sname     = '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+                    file      = '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+                    options   = 'c\x82Sc'
+###[ DHCP options ]###
+                       options   = [message-type=discover max_dhcp_size=576 param_req_list='\x01\x03\x06\x0c\x0f\x1c*' vendor_class_id='udhcp 1.23.2' end pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad pad]
+###[ Padding ]###
+                          load      = '\xe0\x94\xf7\xd5'
+None
+###[ RadioTap dummy ]###
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+b14
+  notdecoded= '\x10\x02\x94\t\xa0\x00\xc1\x07\x00\x00'
+###[ 802.11 ]###
+     subtype   = 8L
+     type      = Management
+     proto     = 0L
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff
+     addr2     = 14:cc:20:a9:02:86
+     addr3     = b6:ff:3e:2e:e0:4f
+     SC        = 1216
+     addr4     = None
+###[ 802.11 Beacon ]###
+        timestamp = 7099802362L
+        beacon_interval= 100
+        cap       = IBSS
+###[ 802.11 Information Element ]###
+           ID        = SSID
+           len       = 3
+           info      = 'CSI'
+###[ 802.11 Information Element ]###
+              ID        = Rates
+              len       = 8
+              info      = '\x82\x04\x0b\x16\x0c\x12\x18$'
+###[ 802.11 Information Element ]###
+                 ID        = DSset
+                 len       = 1
+                 info      = '\t'
+###[ 802.11 Information Element ]###
+                    ID        = IBSSset
+                    len       = 2
+                    info      = '\x00\x00'
+###[ 802.11 Information Element ]###
+                       ID        = ESRates
+                       len       = 4
+                       info      = '0H`l'
+###[ 802.11 Information Element ]###
+                          ID        = 45
+                          len       = 26
+                          info      = '\xef\x11\x1b\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                             ID        = 61
+                             len       = 22
+                             info      = '\t\x00\x00\x00\x00\x00\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]###
+                                ID        = vendor
+                                len       = 7
+                                info      = '\x00P\xf2\x02\x00\x01\x00'
+###[ 802.11 Information Element ]###
+                                   ID        = 145
+                                   len       = 84
+                                   info      = 'Y\xcf'
+None
