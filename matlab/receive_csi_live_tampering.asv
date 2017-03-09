@@ -47,7 +47,7 @@ function [ CSI_history, CSI_samples]  = receive_csi_live_tampering(ports, histor
     
     for i=1:length(ports)
         flushinput(sockets{i});
-     end
+    end
     
 
     for index_samples=1:extra_sample_to_test
@@ -64,10 +64,10 @@ function [ CSI_history, CSI_samples]  = receive_csi_live_tampering(ports, histor
         
         for index_rec=1:length(ports)
                               
-            max_thrshold_vec = thresholds_max(index_rec) * ones(1, index_samples);
+            max_thrshold_vec = thresholds_max(i) * ones(1, index_samples);
             figure(index_rec);
             plot(x_one_to_extra, distance_i{index_rec}, x_one_to_extra, max_thrshold_vec,'--g');
-            hold on
+
 %            display(sprintf( '(threshold, ditance, dec ,sign -): (%d, %d, %d, %d)',  thresholds_max(index_rec), distance_i{index_rec}(index_samples),thresholds_max(index_rec) - distance_i{index_rec}(index_samples), sign(thresholds_max(index_rec) - distance_i{index_rec}(index_samples)) ));
         end
     end

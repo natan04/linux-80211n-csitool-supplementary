@@ -12,7 +12,7 @@ function [ CSI_history, CSI_samples]  = receive_csi_live(ports, history_size, sa
         flushinput(sockets{i});
     end
 
-   enviornment_move = []; 
+  enviornment_move = []; 
   tamper_history =[];
   
   %Capturing history_size packets and putting inside CSI_history
