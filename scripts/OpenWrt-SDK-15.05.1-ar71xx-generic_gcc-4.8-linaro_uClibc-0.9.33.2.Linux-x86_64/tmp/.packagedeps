@@ -1,1 +1,2 @@
 package-$(CONFIG_PACKAGE_helloworld) += helloworld
+package-$(CONFIG_PACKAGE_listen_and_send) += listen_and_send

@@ -8,9 +8,21 @@ menu "Utilities"
 		tristate "helloworld......................... Helloworld -- prints a snarky message"
 		default y if DEFAULT_helloworld
 		default m if ALL
-		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
+		help
+		 Helloworld -- prints a snarky message
+		 
+
+	config PACKAGE_listen_and_send
+		tristate "listen_and_send.................... Helloworld -- prints a snarky message"
+		default y if DEFAULT_listen_and_send
+		default m if ALL
+		select PACKAGE_libc
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libssp if SSP_SUPPORT
 		help
 		 Helloworld -- prints a snarky message

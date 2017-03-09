@@ -1,0 +1,14 @@
+listen_and_send.c: In function 'main':
+listen_and_send.c:28:5: warning: incompatible implicit declaration of built-in function 'memset' [enabled by default]
+     memset(&interfaceAddrMon,0,sizeof(interfaceAddrMon));
+     ^
+listen_and_send.c:31:5: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+     memcpy(&ifr.ifr_name,IFACE_NAME,IFNAMSIZ);
+     ^
+listen_and_send.c:71:5: warning: passing argument 2 of 'inet_aton' from incompatible pointer type [enabled by default]
+     inet_aton(DEST_IP, &si_other.sin_addr.s_addr);
+     ^
+In file included from listen_and_send.c:2:0:
+/home/natan/linux-80211n-csitool-supplementary/scripts/OpenWrt-SDK-15.05.1-ar71xx-generic_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64/staging_dir/toolchain-mips_34kc_gcc-4.8-linaro_uClibc-0.9.33.2/include/arpa/inet.h:78:12: note: expected 'struct in_addr *' but argument is of type 'in_addr_t *'
+ extern int inet_aton (__const char *__cp, struct in_addr *__inp) __THROW;
+            ^

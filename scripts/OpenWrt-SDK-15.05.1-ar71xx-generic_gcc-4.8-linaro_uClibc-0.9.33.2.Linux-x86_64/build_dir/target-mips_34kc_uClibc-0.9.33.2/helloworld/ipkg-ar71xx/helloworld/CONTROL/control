@@ -4,5 +4,5 @@ Depends: libc
 Source: package/helloworld
 Section: utils
 Architecture: ar71xx
-Installed-Size: 1733
+Installed-Size: 1857
 Description:  Helloworld -- prints a snarky message

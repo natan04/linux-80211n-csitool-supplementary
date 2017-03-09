@@ -4,10 +4,23 @@ Depends: libc
 Source: package/helloworld
 Section: utils
 Architecture: ar71xx
-Installed-Size: 1733
+Installed-Size: 1857
 Filename: helloworld_1_ar71xx.ipk
-Size: 2407
-MD5Sum: ecd7c86aaa7864202ff478b8fd633290
-SHA256sum: b13aaebc3c04c303a527d60317a4a45b25d3daef4fd03b09d40c12a82146a078
+Size: 2525
+MD5Sum: f53225c8c22df63197b12d2f687f8a24
+SHA256sum: 011283ae3d4bec9266fdab171907c78ea4bc153c3c5d00e9cb4e485cf34525aa
+Description:  Helloworld -- prints a snarky message
+
+Package: listen_and_send
+Version: 1
+Depends: libc
+Source: package/listen_and_send
+Section: utils
+Architecture: ar71xx
+Installed-Size: 1862
+Filename: listen_and_send_1_ar71xx.ipk
+Size: 2542
+MD5Sum: e0a4c0a67743411cf0d1aa50e63bd7ca
+SHA256sum: a396fdf348b5f4b214eb7a49c68a69291015f507d00eccba011e02dda4e80b18
 Description:  Helloworld -- prints a snarky message
 
