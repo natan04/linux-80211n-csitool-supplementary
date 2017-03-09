@@ -1,0 +1,13 @@
+Package: helloworld
+Version: 1
+Depends: libc
+Source: package/helloworld
+Section: utils
+Architecture: ar71xx
+Installed-Size: 1733
+Filename: helloworld_1_ar71xx.ipk
+Size: 2407
+MD5Sum: ecd7c86aaa7864202ff478b8fd633290
+SHA256sum: b13aaebc3c04c303a527d60317a4a45b25d3daef4fd03b09d40c12a82146a078
+Description:  Helloworld -- prints a snarky message
+

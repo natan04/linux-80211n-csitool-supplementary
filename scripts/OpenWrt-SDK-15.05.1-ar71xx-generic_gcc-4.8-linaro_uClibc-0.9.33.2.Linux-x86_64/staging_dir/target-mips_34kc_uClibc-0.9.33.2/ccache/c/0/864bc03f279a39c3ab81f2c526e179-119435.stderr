@@ -1,0 +1,11 @@
+helloworld.c: In function 'main':
+helloworld.c:25:5: warning: incompatible implicit declaration of built-in function 'memset' [enabled by default]
+     memset((char *) &si_me, 0, sizeof(si_me));
+     ^
+helloworld.c:34:10: warning: passing argument 1 of 'perror' makes pointer from integer without a cast [enabled by default]
+          perror(s);
+          ^
+In file included from helloworld.c:1:0:
+/home/natan/linux-80211n-csitool-supplementary/scripts/OpenWrt-SDK-15.05.1-ar71xx-generic_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64/staging_dir/toolchain-mips_34kc_gcc-4.8-linaro_uClibc-0.9.33.2/include/stdio.h:761:13: note: expected 'const char *' but argument is of type 'int'
+ extern void perror (__const char *__s);
+             ^

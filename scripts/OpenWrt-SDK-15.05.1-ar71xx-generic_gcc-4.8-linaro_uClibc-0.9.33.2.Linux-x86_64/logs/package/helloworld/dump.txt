@@ -1,0 +1,17 @@
+Package: helloworld
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Helloworld -- prints a snarky message
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Helloworld -- prints a snarky message
+
+@@
+
+Makefile:29: *** DESCRIPTION:= is obsolete, use Package/PKG_NAME/description.  Stop.
