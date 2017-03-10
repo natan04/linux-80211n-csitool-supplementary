@@ -14,7 +14,7 @@ def main(argv):
 	while True:
 		data, addr = sock.recvfrom(1024) # buffer size is 1024 byte
 		p = RadioTap()/Dot11(data)
-#		p.show()
+		p.show()
 #		print p.show()
 		s.send(p)
 #		print "transmitting"

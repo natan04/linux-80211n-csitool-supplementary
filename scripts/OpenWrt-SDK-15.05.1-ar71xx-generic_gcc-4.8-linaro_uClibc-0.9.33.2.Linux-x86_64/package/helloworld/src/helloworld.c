@@ -69,7 +69,7 @@ int main(void)
     si_other.sin_family = AF_INET;
     si_other.sin_port = htons(DEST_PORT);
     inet_aton(DEST_IP, &si_other.sin_addr.s_addr);
-    si_other.sin_addr.s_addr = htonl(INADDR_ANY);
+    //si_other.sin_addr.s_addr = htonl(INADDR_ANY);
      
 
     //bind socket to port
