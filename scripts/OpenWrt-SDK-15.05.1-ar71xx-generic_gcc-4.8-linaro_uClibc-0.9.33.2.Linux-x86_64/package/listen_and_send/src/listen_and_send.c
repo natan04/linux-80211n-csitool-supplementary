@@ -10,8 +10,10 @@
 #define REC_PORT 5005   //The port on which to listen for incoming data
 #define DEST_PORT 5006
 #define DEST_IP "132.72.42.199"
-int main(void)
+int main(int argc, char *argv[])
 {
+
+    printf("Dest connection IP: %s", argv[1]);
     //monitor mode socket binding
     char* IFACE_NAME = "mon0";
 
@@ -68,7 +70,7 @@ int main(void)
      
     si_other.sin_family = AF_INET;
     si_other.sin_port = htons(DEST_PORT);
-    inet_aton(DEST_IP, &si_other.sin_addr.s_addr);
+    inet_aton(argv[1], &si_other.sin_addr.s_addr);
     //si_other.sin_addr.s_addr = htonl(INADDR_ANY);
      
 

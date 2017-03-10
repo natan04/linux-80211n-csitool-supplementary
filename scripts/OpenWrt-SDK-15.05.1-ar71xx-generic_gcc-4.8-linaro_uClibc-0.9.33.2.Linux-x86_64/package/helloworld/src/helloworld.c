@@ -7,9 +7,8 @@
 #include <net/if.h>
 #include <sys/ioctl.h>
 #define BUFLEN 512  //Max length of buffer
-#define REC_PORT 5005   //The port on which to listen for incoming data
-#define DEST_PORT 5006
-#define DEST_IP "132.72.42.199"
+#define REC_PORT 5006   //The port on which to listen for incoming data
+
 int main(void)
 {
     //monitor mode socket binding
@@ -66,11 +65,7 @@ int main(void)
     si_me.sin_port = htons(REC_PORT);
     si_me.sin_addr.s_addr = htonl(INADDR_ANY);
      
-    si_other.sin_family = AF_INET;
-    si_other.sin_port = htons(DEST_PORT);
-    inet_aton(DEST_IP, &si_other.sin_addr.s_addr);
-    //si_other.sin_addr.s_addr = htonl(INADDR_ANY);
-     
+
 
     //bind socket to port
     if( bind(fd_UDP , (struct sockaddr*)&si_me, sizeof(si_me) ) == -1)
@@ -86,18 +81,25 @@ int main(void)
     //keep listening for data
     while(1)
     {
-         int n = recvfrom(fd_monitor, buffReceiveMonitor, 2000, 0, NULL, NULL);
-        printf("receive n bytes: %d\n", n);    
 
-     //   printf("Data: %s\n" , buf);
-         
-        //now reply the client with the same data
-        if (sendto(fd_UDP, buffReceiveMonitor, n, 0, (struct sockaddr*) &si_other, slen) == -1)
+
+      if ((recv_len = recvfrom(fd_UDP, buf, BUFLEN, 0,NULL, NULL)) == -1)
+       {
+             printf("problem : recvfrom()\n");
+             return -1;
+        }
+          
+
+
+        if (send(fd_monitor, buf,recv_len, 0) < 0)
         {
-            perror("sendt");
-            printf("problem : sendto()");
+            printf("problem : recform()\n");
             return -1;
         }
+        printf("receive n bytes: %d\n", recv_len);    
+
+
+
     }
  
     close(fd_UDP);
