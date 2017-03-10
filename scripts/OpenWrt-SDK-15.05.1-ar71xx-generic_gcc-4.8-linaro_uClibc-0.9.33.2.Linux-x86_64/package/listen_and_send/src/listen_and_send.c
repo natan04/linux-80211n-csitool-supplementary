@@ -89,7 +89,7 @@ int main(int argc, char *argv[])
     while(1)
     {
          int n = recvfrom(fd_monitor, buffReceiveMonitor, 2000, 0, NULL, NULL);
-        printf("receive n bytes: %d\n", n);    
+//        printf("receive n bytes: %d\n", n);    
 
      //   printf("Data: %s\n" , buf);
          

@@ -13,7 +13,7 @@ def main(argv):
 	s = conf.L2socket(iface="mon0")
 	while True:
 		data, addr = sock.recvfrom(1024) # buffer size is 1024 byte
-		p = RadioTap()/Dot11(data)
+		p = RadioTap(data)
 		p.show()
 #		print p.show()
 		s.send(p)
