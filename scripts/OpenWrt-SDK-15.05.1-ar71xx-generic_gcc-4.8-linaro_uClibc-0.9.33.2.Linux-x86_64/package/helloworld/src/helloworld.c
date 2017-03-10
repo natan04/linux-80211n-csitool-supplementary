@@ -96,7 +96,7 @@ int main(void)
             printf("problem : recform()\n");
             return -1;
         }
-        printf("receive n bytes: %d\n", recv_len);    
+//        printf("receive n bytes: %d\n", recv_len);    
 
 
 

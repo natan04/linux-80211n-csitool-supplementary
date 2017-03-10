@@ -6,7 +6,7 @@
  #include <net/ethernet.h>
 #include <net/if.h>
 #include <sys/ioctl.h>
-#define BUFLEN 512  //Max length of buffer
+#define BUFLEN 2000  //Max length of buffer
 #define REC_PORT 5005   //The port on which to listen for incoming data
 #define DEST_PORT 5006
 #define DEST_IP "132.72.42.199"
