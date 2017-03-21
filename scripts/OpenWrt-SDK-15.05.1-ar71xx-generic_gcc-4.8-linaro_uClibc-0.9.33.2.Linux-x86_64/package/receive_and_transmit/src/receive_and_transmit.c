@@ -9,6 +9,13 @@
 #define BUFLEN 2000  //Max length of buffer
 #define REC_PORT 5006   //The port on which to listen for incoming data
 
+struct ieee80211_radiotap_header {
+        u_int8_t        it_version;     /* set to 0 */
+        u_int8_t        it_pad;
+        u_int16_t       it_len;         /* entire length */
+        u_int32_t       it_present;     /* fields present */
+} __attribute__((__packed__));
+
 int main(void)
 {
     //monitor mode socket binding
@@ -89,7 +96,8 @@ int main(void)
              return -1;
         }
           
-
+    struct ieee80211_radiotap_header * radioHeader = (struct ieee80211_radiotap_header * ) buf;
+    printf("length of radiotap header: %d\n", radioHeader->it_len);
 
         if (send(fd_monitor, buf,recv_len, 0) < 0)
         {
